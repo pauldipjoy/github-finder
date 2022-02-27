@@ -1,6 +1,8 @@
 let searchButton = document.querySelector("#searchBtn");
 let searchUser = document.querySelector("#searchUser");
 
+let ui = new UI();
+
 
 searchButton.addEventListener("click" , (event) => {
 
@@ -26,11 +28,13 @@ if(userText != ''){
         } else {
 
             //show profile
+            ui.showProfile(data);
         }
     })
 
 
 } else {
+    
 
     // clear profile
 }
